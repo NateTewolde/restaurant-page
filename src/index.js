@@ -11,8 +11,18 @@ function createHomepage() {
 
   const restaurantHeadline = document.createElement("div");
   restaurantHeadline.classList.add("headline");
-  restaurantHeadline.textContent =
-    "When you're here, you're family. Eat Fresh. Have it your way. I don't even have to tell you what restaurants these taglines come from, because you already know! A good tagline can become part of your restaurant's identity, almost as much as your name and logo. The keys to selecting a great tagline? Keep it short, snappy, and easy to remember. If you're having trouble coming up with one, here is a list of 187 different restaurant taglines to get you started. Adopt one of these, or use one as a jumping off point to your own clever creation! There are a lot of ways you can go with your tagline if you're not trying to tie in a specific cuisine. You could choose to emphasize your great value, a fun or romantic atmosphere, or the high quality of your product.";
+
+  const restaurantName = document.createElement("div");
+  restaurantName.classList.add("restaurant-name");
+  restaurantName.textContent = "Corner Bistro";
+
+  const restaurantSlogan = document.createElement("div");
+  restaurantSlogan.classList.add("restaurant-Slogan");
+  restaurantSlogan.textContent =
+    "When you're here, you're family. Eat Fresh. Have it your way.";
+
+  restaurantHeadline.appendChild(restaurantName);
+  restaurantHeadline.appendChild(restaurantSlogan);
 
   homePage.appendChild(restaurantImg);
   homePage.appendChild(restaurantHeadline);
