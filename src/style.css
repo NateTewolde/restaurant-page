@@ -1,0 +1,16 @@
+#content {
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+img {
+  width: 400px;
+}
+
+.tabs {
+  display: flex;
+  align-items: space-around;
+}
